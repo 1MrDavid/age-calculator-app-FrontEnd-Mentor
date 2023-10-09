@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+<section class="ac"> <!--ac is for Age Calculator-->
+  <div class="ac-inputswrapper">
+    <div id="ac-daywrapper">
+      <span>DAY</span>
+      <input id="user-day" type="number" placeholder="DD">
+      <p id="day-no-field" class="ac-inputswrapper-error"><i>This field is required</i></p>
+      <p id="day-error" class="ac-inputswrapper-error"><i>Must be a valid day</i></p>
+    </div>
+    <div id="ac-monthwrapper">
+      <span>MONTH</span>
+      <input id="user-month" type="number" placeholder="MM">
+      <p id="month-no-field" class="ac-inputswrapper-error"><i>This field is required</i></p>
+      <p id="month-error" class="ac-inputswrapper-error"><i>Must be a valid month</i></p>
+    </div>
+    <div id="ac-yearwrapper">
+      <span>YEAR</span>
+      <input id="user-year" type="number" placeholder="YYYY">
+      <p id="year-no-field" class="ac-inputswrapper-error"><i>This field is required</i></p>
+      <p id="year-error" class="ac-inputswrapper-error"><i>Must be in the past</i></p>
+    </div>
+  </div>
+  <div class="images">
+    <img class="image_line" src="./assets/images/Line 1.svg" alt="">
+    <img id="activator" class="image_arrow" src="./assets/images/icon-arrow.svg" alt="">
+  </div>
+  <div class="ac-displayresults">
+    <h4><span id="year">--</span> years</h4>
+    <h4><span id="month">--</span> months</h4>
+    <h4><span id="day">--</span> days</h4>
+  </div>
+</section>
+</body>
+<script src="./src/script.js"></script>
+</html>
